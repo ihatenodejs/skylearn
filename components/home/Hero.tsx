@@ -8,7 +8,7 @@ export default function Hero() {
     <Section>
       <Image src="/generic.png" alt="School" width={150} height={150} />
       <h1 className="text-4xl font-extrabold pb-4">Example School District</h1>
-      <p className="mb-6">This would have some text, I dunno.</p>
+      <p className="mb-6 max-w-2xl">This would have some text, I dunno.</p>
       <Link href="/about">
         <Button
           variant="classic"
