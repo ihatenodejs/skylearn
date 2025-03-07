@@ -5,11 +5,11 @@ import Link from 'next/link'
 export default function PoweredBy() {
   return (
     <Section className="flex justify-end text-right">
-      <div className="justify-center text-center xl:justify-start xl:text-left p-4">
+      <div className="justify-center text-center xl:justify-end xl:text-right p-4">
         <div className="flex justify-end">
           <FaGraduationCap
             size={100}
-            className="pb-3 mx-auto lg:ml-0"
+            className="pb-3 mx-auto lg:mr-0"
           />
         </div>
         <h1 className="text-4xl font-extrabold pb-4">Powered by SkyLearn</h1>
