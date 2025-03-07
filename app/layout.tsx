@@ -1,5 +1,6 @@
 import { Theme } from "@radix-ui/themes";
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import '@fontsource-variable/dm-sans';
 import "@radix-ui/themes/styles.css";
 import "./globals.css";
@@ -20,9 +21,11 @@ export default function RootLayout({
       <body
         className="antialiased"
       >
-        <Theme accentColor="purple">
-          {children}
-        </Theme>
+        <ThemeProvider attribute="class">
+          <Theme accentColor="purple">
+            {children}
+          </Theme>
+        </ThemeProvider>
       </body>
     </html>
   );
